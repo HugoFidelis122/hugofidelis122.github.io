@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hugo — Portfólio</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta property="og:title" content="Hugo's portfolio">
+<meta property="og:description" content="Ola,aqui e o Hugo vem conhecer meu portfolio">
+<meta property="og:image" content="https://user.github.io/favicon.ico">
+<meta property="og:url" content="https://user.github.io">
+<meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Canvas de partículas -->
+  <canvas id="particles"></canvas>
+
+  <!-- Nav -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <img src="assets/foto.png" alt=" "class="nav-logo" /><span class="accent">.</span></span>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Skills</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#sobre">Sobre</a>
+      <a href="#habilidades">Skills</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Estudante &amp; Desenvolvedor</p>
+      <h1 class="hero-title">
+        Olá, eu sou<br />
+        <span class="hero-name">Hugo<span class="accent"></span></span>
+      </h1>
+      <p class="hero-sub">
+        Apaixonado por tecnologia, programação e Linux.<br />
+        Construindo projetos que mostram minha evolução.
+      </p>
+      <div class="hero-cta">
+        <a href="#projetos" class="btn-primary">Ver projetos</a>
+        <a href="#contato" class="btn-ghost">Falar comigo</a>
+      </div>
+      <div class="hero-scroll">
+        <span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="section">
+    <div class="container">
+      <span class="section-eyebrow">Quem sou</span>
+      <h2 class="section-title">Sobre mim</h2>
+      <div class="sobre-grid">
+        <div class="sobre-avatar">
+          <div class="avatar-ring">
+            <img src="assets/foto.png" alt="Hugo" class="avatar-placeholder" />
+          </div>
+          <div class="avatar-glow"></div>
+        </div>
+        <div class="sobre-text">
+          <p>
+            Meu nome é <strong>Hugo</strong>, estudante do ensino fundamental em Conselheiro Lafaiete, MG.
+            Acredito que <strong>dedicação, curiosidade e fé</strong> são fundamentais para crescer — na vida e na tecnologia.
+          </p>
+          <p>
+            Comecei na programação por vontade própria, experimentando projetos reais desde cedo.
+            Hoje trabalho com desenvolvimento web, administração de servidores Linux e automação,
+            sempre buscando aprender algo novo.
+          </p>
+          <p>
+            Além de coder, sou DJ em eventos da escola e curto mecânica de bicicletas e eletrônica automotiva.
+          </p>
+          <div class="sobre-stats">
+            <div class="stat">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Anos estudando</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">Projetos criados</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">∞</span>
+              <span class="stat-label">Vontade de aprender</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section id="habilidades" class="section section-alt">
+    <div class="container">
+      <span class="section-eyebrow">O que sei fazer</span>
+      <h2 class="section-title">Habilidades</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card" data-delay="0">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Programação</h3>
+          <p>JavaScript, TypeScript, Node.js, Python, HTML &amp; CSS — projetos reais do zero.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w: 80%"></div></div>
+        </div>
+
+        <div class="skill-card" data-delay="100">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Linux &amp; Servidores</h3>
+          <p>Proxmox, Docker, LXC, VPS, shell scripting e homelab próprio.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w: 85%"></div></div>
+        </div>
+
+        <div class="skill-card" data-delay="200">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Desenvolvimento Web</h3>
+          <p>React, Express, Prisma, PostgreSQL — fullstack com foco em performance.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w: 75%"></div></div>
+        </div>
+
+        <div class="skill-card" data-delay="300">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+          </div>
+          <h3>DJ &amp; Música</h3>
+          <p>Mixagem em eventos escolares, criação de painéis de controle com Web Audio API.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w: 70%"></div></div>
+        </div>
+
+        <div class="skill-card" data-delay="400">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3>Resolução de Problemas</h3>
+          <p>Diagnóstico, debugging e otimização — do código à eletrônica automotiva.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w: 90%"></div></div>
+        </div>
+
+        <div class="skill-card" data-delay="500">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <h3>Desenho</h3>
+          <p>Ilustração e criatividade aplicada a interfaces e projetos visuais.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w: 65%"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="section">
+    <div class="container">
+      <span class="section-eyebrow">O que construí</span>
+      <h2 class="section-title">Projetos</h2>
+      <div class="projects-grid">
+
+        <article class="project-card featured">
+          <div class="project-badge">Destaque</div>
+          <div class="project-header">
+            <span class="project-icon">🏫</span>
+            <div class="project-links">
+              <a href="#" class="project-link" title="Código">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>EEDRA</h3>
+          <p>Plataforma fullstack para a escola E.E. Dr. Antônio Nogueira de Rezende. React/TypeScript no frontend, Node.js + Express + Prisma + PostgreSQL no backend, autenticação JWT com refresh tokens, módulo de notificações e deploy com Docker Compose.</p>
+          <div class="project-tags">
+            <span>React</span><span>TypeScript</span><span>Node.js</span><span>PostgreSQL</span><span>Docker</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🎛️</span>
+            <div class="project-links">
+              <a href="#" class="project-link" title="Demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>DJ Control Panel</h3>
+          <p>Painel de controle DJ em HTML/CSS/JS puro usando Web Audio API. Dois decks com jog wheel scratch, EQ por canal, metros LED, crossfader e sintetizador de buzina.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>Web Audio API</span><span>JavaScript</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🖥️</span>
+            <div class="project-links">
+              <a href="#" class="project-link" title="Código">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Homelab / Mini-datacenter</h3>
+          <p>Infraestrutura própria com Proxmox VE, containers LXC, Docker, Homarr dashboard, Technitium DNS e Cloudflare Tunnels. Scripts de deploy automatizado para notebooks reaproveitados.</p>
+          <div class="project-tags">
+            <span>Linux</span><span>Proxmox</span><span>Docker</span><span>Shell</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🚀</span>
+            <div class="project-links">
+              <a href="#" class="project-link" title="Código">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Skyport v2</h3>
+          <p>Painel de gerenciamento de game servers reescrito em Node.js 20+ com ESM, Express, WebSocket, EJS, SQLite e xterm.js. Sistema de autenticação, painel admin e agente Wings.</p>
+          <div class="project-tags">
+            <span>Node.js</span><span>WebSocket</span><span>Docker</span><span>SQLite</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Objetivos -->
+  <section id="objetivos" class="section section-alt">
+    <div class="container">
+      <span class="section-eyebrow">Para onde vou</span>
+      <h2 class="section-title">Objetivos</h2>
+      <div class="goals-list">
+        <div class="goal-item" data-delay="0">
+          <div class="goal-line"></div>
+          <div class="goal-dot"></div>
+          <p>Aprender novas linguagens de programação e ampliar o stack técnico.</p>
+        </div>
+        <div class="goal-item" data-delay="100">
+          <div class="goal-line"></div>
+          <div class="goal-dot"></div>
+          <p>Criar projetos cada vez mais completos e impactantes.</p>
+        </div>
+        <div class="goal-item" data-delay="200">
+          <div class="goal-line"></div>
+          <div class="goal-dot"></div>
+          <p>Aprimorar habilidades em Linux, redes e infraestrutura.</p>
+        </div>
+        <div class="goal-item" data-delay="300">
+          <div class="goal-line"></div>
+          <div class="goal-dot"></div>
+          <p>Trabalhar com tecnologia de forma profissional no futuro.</p>
+        </div>
+        <div class="goal-item" data-delay="400">
+          <div class="goal-line"></div>
+          <div class="goal-dot"></div>
+          <p>Contribuir para projetos open-source e a comunidade tech.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="section">
+    <div class="container">
+      <span class="section-eyebrow">Bora conversar</span>
+      <h2 class="section-title">Contato</h2>
+      <div class="contact-inner">
+        <p class="contact-lead">
+          Quer acompanhar minha evolução, colaborar em projetos<br />
+          ou só trocar uma ideia sobre tecnologia?
+        </p>
+       <div class="contact-links">
+  <a href="mailto:hugo.10221139@aluno.mg.gov.br " class="contact-card">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    <span>E-mail</span>
+  </a>
+  <a href="https://wa.me/553183004189" target="_blank" class="contact-card">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Feito com <span class="accent">♥</span> por Hugo · <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
